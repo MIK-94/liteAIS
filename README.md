@@ -1,2 +1,5 @@
 # liteAIS
-Demo: https://litebase.000webhostapp.com/
+Demo: https://litebase.000webhostapp.com/ <br>
+Для установки необходимо: <br> 
+1) отредактировать файл констант (база, пользователь, пароль) в /include/con.php <br>
+2) отредактировать index.php (задать хост для ajax запросов, и задать начальную таблицу)
