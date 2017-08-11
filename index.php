@@ -1,4 +1,8 @@
 <?php
+error_reporting(0);
+session_start(); 
+$_SESSION['table'] = 'tovar'; //Название для начальной таблицы
+
 	require_once("include/con.php");
 	include("include/vals_of_table.php");
 
@@ -44,9 +48,9 @@ $.ajax({
 		data: {table_name: table_name},
 		success: function(html) {
 			alert(html)
+			get_data()
 		}
 	})
-get_data()
 }
 </script>
 
@@ -56,7 +60,7 @@ get_data()
 <div id='content_base'> </div>
 
 <script type='text/javascript'>
-var host = 'https://localhost'; //ИЗМЕНИТЬ ЕСЛИ БУДЕШЬ ПЕРЕНОСИТЬ НА ДРУГОЙ ХОСТ
+var host = 'https://litebase.000webhostapp.com'; //ИЗМЕНИТЬ ЕСЛИ БУДЕШЬ ПЕРЕНОСИТЬ НА ДРУГОЙ ХОСТ
 
 //запрос на добавление поля
 function insert() {
@@ -77,10 +81,9 @@ $.ajax({
 	data: {data_send: data_send},
 	success: function (html) {
 		alert(html)
+		get_data()
 		}		
 	});  
-get_data()
-
 }
 
 //запрос на удаления поля по id
@@ -93,9 +96,10 @@ $.ajax({
 	data: {id: id},
 	success: function (html) {
 		alert(html)
+		get_data()
 		}		
 	});  
-get_data()
+
 }
 
 //запрос на редактирование поля
@@ -117,9 +121,9 @@ $.ajax({
 	data: {id: id, data_send: data_send},
 	success: function (html) {
 		alert(html)
+		get_data()
 		}		
 	});  
-get_data()
 }
 
 //маленькая отчистка полей
@@ -133,6 +137,7 @@ function clear_form() {
 
 }
 
+////////////////////////////////
 function get_data() {
 $.ajax({
 		type: 'GET',
@@ -152,7 +157,7 @@ $.ajax({
 		}
 	});
 }
-
+//////////////////////////////////
 $(document).ready(function(){
 selection_table()	
 get_data()
