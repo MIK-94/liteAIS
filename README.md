@@ -13,9 +13,9 @@ Demo: https://litebase.000webhostapp.com/ <br>
 <li>index.php (главная страница)</li>
 <li>get_data.php (формирует таблицу) </li>
 <li>show_tables.php (определяет названия таблиц созданных в БД и выводит их для выбора)</li>
-<li>insert.php (Запрос на запись нового поля)</li>
-<li>update.php (Запрос на изменение поля)</li>
-<li>delet.php (Запрос на удаления поля)</li>
+<li>insert.php (Запрос на запись)</li>
+<li>update.php (Запрос на изменение)</li>
+<li>delet.php (Запрос на удаление)</li>
 </ul></i> 
 /include:<br>
 <i><ul>
