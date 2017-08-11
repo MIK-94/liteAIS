@@ -60,7 +60,7 @@ $.ajax({
 <div id='content_base'> </div>
 
 <script type='text/javascript'>
-var host = 'https://litebase.000webhostapp.com'; //ИЗМЕНИТЬ ЕСЛИ БУДЕШЬ ПЕРЕНОСИТЬ НА ДРУГОЙ ХОСТ
+var host = 'https://litebase.000webhostapp.com'; //ИЗМЕНИТЬ ПРИ НА СВОЙ ХОСТ
 
 //запрос на добавление поля
 function insert() {
@@ -137,7 +137,6 @@ function clear_form() {
 
 }
 
-////////////////////////////////
 function get_data() {
 $.ajax({
 		type: 'GET',
@@ -157,7 +156,7 @@ $.ajax({
 		}
 	});
 }
-//////////////////////////////////
+
 $(document).ready(function(){
 selection_table()	
 get_data()
