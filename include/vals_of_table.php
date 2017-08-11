@@ -1,12 +1,7 @@
 <?php 
-$table = 'peaple';    # РЕДАКТИРОВАТЬ ТАБЛИЦУ tovar
-
 session_start(); 
 $table = strval($_SESSION['table']);
-
-
 $table_l = "'".$table."'";
-
 	#Определяем название полей таблицы (для дальнейшего вывода)
 	$filde_name = array();
 	$res=$con->query("show columns from $table");
