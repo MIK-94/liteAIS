@@ -56,7 +56,6 @@ $.ajax({
 
  </div>
 
-<!-- МЕСТО ДЛЯ  ФОРМИРОВАНИЯ ТАБЛИЦЫ -->
 <div id='content_base'> </div>
 
 <script type='text/javascript'>
@@ -126,7 +125,7 @@ $.ajax({
 	});  
 }
 
-//маленькая отчистка полей
+//отчистка полей
 function clear_form() {
 			var j=0	
 			while (j<=".$count.") {
